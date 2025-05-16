@@ -1,4 +1,4 @@
-### 🎮 **IF Block Exercise: Candy Collection Game in C#**
+### 🎮 **IF Block Exercise: Candy Collection Game in **
 
 #### **Instructions:**
 
