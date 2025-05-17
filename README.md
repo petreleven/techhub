@@ -54,4 +54,84 @@ Now, let's combine everything! You have **10 candies**. Write a program that che
 * Experiment with different numbers for `candies` to see how the program behaves.
 * Add more conditions like checking for more than 50 candies or having exactly 0 candies.
 
-This activity should help solidify the concept of **if statements** and how they work in a simple and interactive way! Would you like a suggestion for an even more complex challenge?
+
+
+
+
+### LISTS EXERCISES
+
+### 🎮 1. You Have Some Game Scores
+
+You played 3 levels in a game. Your scores were 100, 200, and 150.
+Write a program that stores these scores in a list and prints the second score.
+
+**Hint:**
+
+* Use a list to store the scores.
+* Use indexing to print the second item (remember: Python starts counting at 0).
+
+---
+
+### 🏆 2. Add a New High Score
+
+You just got a new score of 250 in your game.
+Add it to your existing score list: `[100, 200, 150]`.
+
+**Hint:**
+
+* Use the `.append()` method to add the score.
+* Print the updated list.
+
+---
+
+### 🎒 3. Your Inventory
+
+Your inventory has: `"sword"`, `"potion"`, and `"shield"`.
+You find a `"bow"` and want to add it to your inventory.
+Then, you use the `"potion"` and want to remove it.
+
+**Hint:**
+
+* Use `.append()` to add.
+* Use `.remove()` to take something out.
+
+---
+
+### 🧠 4. Is the Game on the List?
+
+You have these games: `["Minecraft", "Roblox", "Among Us"]`
+Ask the user to type the name of a game.
+If the game is in the list, print `"Yes, it's in your library!"`
+
+**Hint:**
+
+* Use `input()` to get the game.
+* Use the `in` keyword in an `if` statement.
+
+---
+
+### 🧱 5. Build a Level List
+
+Create a list of 3 levels: `"Level 1"`, `"Level 2"`, `"Boss Level"`.
+Print each level one by one.
+
+**Hint:**
+
+* Use a `for` loop to go through the list.
+
+---
+
+### 🎲 6. Random Game Picker
+
+You can't decide what to play!
+You have: `["Mario", "Zelda", "Pokemon"]`
+Write a program to randomly pick one.
+
+**Hint:**
+
+* Use `import random`
+* Use `random.choice()` to select a game from the list.
+
+---
+
+
