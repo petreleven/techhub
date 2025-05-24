@@ -134,4 +134,88 @@ Write a program to randomly pick one.
 
 ---
 
+### CONSOLE READLINE
+### ------------------
+
+
+### 🟢 **1. Rectangle Area Calculator**
+
+**Challenge**: Ask the user for the width and height of a rectangle. Then calculate and display the area.
+
+**Hint**: Use `int.Parse()` or `Convert.ToInt32()` to turn the input into numbers. Area = width × height.
+
+---
+
+### 🟢 **2. Age in 5 Years**
+
+**Challenge**: Ask the user how old they are, then display how old they’ll be in 5 years.
+
+**Hint**: Add 5 to the user's age. You’ll need to convert the input to an integer.
+
+---
+
+### 🟢 **3. Add Two Numbers**
+
+**Challenge**: Ask the user for two numbers and print the total.
+
+**Hint**: Remember to convert both inputs before adding them.
+
+---
+
+### 🟢 **4. Celsius to Fahrenheit Converter**
+
+**Challenge**: Ask the user for a temperature in Celsius, then convert it to Fahrenheit.
+
+**Hint**: Use this formula: Fahrenheit = (Celsius × 9 ÷ 5) + 32.
+
+---
+
+### 🟢 **5. Triangle Area**
+
+**Challenge**: Ask the user for the base and height of a triangle. Then calculate the area.
+
+**Hint**: Area = 0.5 × base × height.
+
+---
+
+### 🟢 **6. Multiplication Quiz**
+
+**Challenge**: Ask the user, "What is 6 × 7?" and check if they answered correctly.
+
+**Hint**: Use `if` to check if their answer equals 42.
+
+---
+
+### 🟢 **7. Repeat My Name**
+
+**Challenge**: Ask the user for their name and how many times they want it repeated. Then print it that many times.
+
+**Hint**: Use a `for` loop and make sure to convert the number input.
+
+---
+
+### 🟢 **8. Even or Odd Checker**
+
+**Challenge**: Ask the user for a number and tell them whether it's even or odd.
+
+**Hint**: Use the `%` (modulo) operator to see if the number has a remainder when divided by 2.
+
+---
+
+### 🟢 **9. Simple Calculator**
+
+**Challenge**: Ask the user for two numbers and an operator (+, -, \*, /). Then perform that operation and show the result.
+
+**Hint**: Use `if` or `switch` to pick the correct operation based on the user’s input.
+
+---
+
+### 🟢 **10. Days to Seconds Converter**
+
+**Challenge**: Ask the user how many days they want to convert into seconds.
+
+**Hint**: 1 day = 24 hours, 1 hour = 60 minutes, 1 minute = 60 seconds.
+
+
+
 
