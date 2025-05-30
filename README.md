@@ -216,6 +216,74 @@ Write a program to randomly pick one.
 
 **Hint**: 1 day = 24 hours, 1 hour = 60 minutes, 1 minute = 60 seconds.
 
+## LOOPS
+
+---
+
+### **1. Scenario 1:**
+
+You are sending out invitations to your 3 best friends for a sleepover.
+
+**Write a program that prints "You're invited!" 3 times.**
+
+💡 **Hint:**
+
+* Use a `for` loop to repeat something 3 times.
+* Inside the loop, print `"You're invited!"`.
+
+---
+
+### **2. Scenario 2:**
+
+Now, you have 5 candies. Write a program that checks if you have less than 10 candies.
+If you do, the program should print `"Keep trying!"`.
+
+💡 **Hint:**
+
+* Use an `if` block to check if candies are less than 10.
+* Print the message if true.
+
+---
+
+### **3. Scenario 3:**
+
+You are practicing your dance moves. You want to repeat your favorite dance move 5 times.
+
+**Write a program that uses a `for` loop to print "Twirl!" five times.**
+
+💡 **Hint:**
+
+* Use a `for` loop to repeat something 5 times.
+* Inside the loop, print `"Twirl!"`.
+
+---
+
+### **4. Scenario 4:**
+
+You're helping your little brother count his toy cars. He has 1 to 5 cars.
+
+**Write a program that prints the numbers from 1 to 5.**
+
+💡 **Hint:**
+
+* Use a `for` loop that goes from 1 to 5.
+* Print the number inside the loop.
+
+---
+
+### **5. Scenario 5:**
+
+You are making bracelets for your friends. You want to make one for each friend in a list: `["Amy", "Bella", "Chloe"]`.
+
+**Write a program that prints "Making a bracelet for \<name>" for each friend.**
+
+💡 **Hint:**
+
+* Use a `for` loop to go through the list of names.
+* Use the name in the print statement.
+
+---
+
 
 
 
