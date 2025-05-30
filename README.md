@@ -282,8 +282,77 @@ You are making bracelets for your friends. You want to make one for each friend 
 * Use a `for` loop to go through the list of names.
 * Use the name in the print statement.
 
+
 ---
 
+### **6. Scenario 6:**
 
+You are opening surprise boxes, one by one.
+You find a puppy in box 3! You should stop opening more boxes when you find it.
+
+**Write a program that checks boxes 1 to 5 and prints "Opening box \<number>" until it finds box 3. When it does, print "Puppy found!" and stop.**
+
+💡 **Hint:**
+
+* Use a `for` loop from 1 to 5.
+* Use an `if` to check if it's box 3.
+* Use `break` to stop the loop when the puppy is found.
+
+---
+
+### **7. Scenario 7:**
+
+You are guessing a number in a game. The correct number is 4.
+
+**Write a program that loops through guesses 1 to 5 and prints "Guessing \<number>...". If the guess is 4, print "You got it!" and stop guessing.**
+
+💡 **Hint:**
+
+* Use a `for` loop from 1 to 5.
+* Use an `if` to check if the guess is 4.
+* Use `break` when the correct guess is found.
+
+---
+
+### **8. Scenario 8:**
+
+You’re baking cupcakes. You want to bake 10, but your oven only fits 6.
+So, stop after cupcake number 6.
+
+**Write a program that prints "Baking cupcake \<number>" and stops after 6 cupcakes.**
+
+💡 **Hint:**
+
+* Use a `for` loop from 1 to 10.
+* Use `if` and `break` to stop at 6.
+
+---
+
+### **9. Scenario 9:**
+
+You’re reading pages of your favorite comic. You get sleepy on page 4.
+
+**Write a program that loops from page 1 to 7 and prints "Reading page \<number>". If the page is 4, print "Too sleepy... stopping now!" and stop reading.**
+
+💡 **Hint:**
+
+* Use a `for` loop from 1 to 7.
+* Use `if` and `break` when page 4 is reached.
+
+---
+
+### **10. Scenario 10:**
+
+You are picking apples. You pick 1 apple at a time.
+If you find a worm in an apple (on apple number 5), you stop picking.
+
+**Write a program that prints "Picked apple \<number>". If it's number 5, print "Eww, a worm! Stop picking." and break the loop.**
+
+💡 **Hint:**
+
+* Use a `for` loop from 1 to 10.
+* Use an `if` and `break` when you reach apple 5.
+
+---
 
 
