@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS - Game Discovery Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.4s ease-out',
+                        'glow-pulse': 'glowPulse 2s ease-in-out infinite',
+                        'neon-flicker': 'neonFlicker 1.5s ease-in-out infinite alternate',
+                        'cyber-slide': 'cyberSlide 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        glowPulse: {
+                            '0%, 100%': { boxShadow: '0 0 30px rgba(34, 211, 238, 0.5)' },
+                            '50%': { boxShadow: '0 0 50px rgba(34, 211, 238, 0.8)' }
+                        },
+                        neonFlicker: {
+                            '0%, 100%': { textShadow: '0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff' },
+                            '50%': { textShadow: '0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff' }
+                        },
+                        cyberSlide: {
+                            '0%': { transform: 'translateX(-100px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-cyan-100 min-h-screen overflow-x-hidden">
+    <!-- Animated Background -->
+    <div class="fixed inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(34,211,238,0.1),transparent_70%)]"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="relative z-10 border-b border-cyan-900/30">
+        <div class="container mx-auto px-6 py-8">
+            <div class="text-center">
+                <h1 class="text-7xl font-black tracking-wider mb-4 animate-neon-flicker">
+                    <span class="bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
+                        NEXUS
+                    </span>
+                </h1>
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <div class="h-px w-20 bg-gradient-to-r from-transparent to-cyan-500"></div>
+                    <p class="text-cyan-300 uppercase tracking-[0.3em] text-sm font-medium">
+                        GAME DISCOVERY PLATFORM
+                    </p>
+                    <div class="h-px w-20 bg-gradient-to-l from-transparent to-cyan-500"></div>
+                </div>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Explore the digital frontier of gaming excellence
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <div class="relative z-10 container mx-auto px-6 py-12">
+        <!-- Filter Section -->
+        <div class="mb-16">
+            <div class="bg-black/60 backdrop-blur-xl border border-cyan-900/50 rounded-lg p-8 shadow-2xl shadow-cyan-500/10">
+                <div class="flex items-center justify-center gap-4 mb-8">
+                    <div class="w-8 h-px bg-gradient-to-r from-transparent to-cyan-500"></div>
+                    <h2 class="text-2xl font-bold uppercase tracking-wider text-cyan-300">
+                        FILTER PROTOCOLS
+                    </h2>
+                    <div class="w-8 h-px bg-gradient-to-l from-transparent to-cyan-500"></div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                    <button class="filter-btn active group relative overflow-hidden bg-cyan-900/30 border border-cyan-500 text-cyan-300 px-4 py-3 rounded font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:bg-cyan-500/20 hover:shadow-lg hover:shadow-cyan-500/25" data-sort="name">
+                        <span class="relative z-10">NAME</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    </button>
+                    <button class="filter-btn group relative overflow-hidden bg-gray-900/50 border border-gray-700 text-gray-400 px-4 py-3 rounded font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:border-cyan-500 hover:text-cyan-300 hover:bg-cyan-500/10" data-sort="released">
+                        <span class="relative z-10">RELEASED</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    </button>
+                    <button class="filter-btn group relative overflow-hidden bg-gray-900/50 border border-gray-700 text-gray-400 px-4 py-3 rounded font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:border-cyan-500 hover:text-cyan-300 hover:bg-cyan-500/10" data-sort="added">
+                        <span class="relative z-10">ADDED</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    </button>
+                    <button class="filter-btn group relative overflow-hidden bg-gray-900/50 border border-gray-700 text-gray-400 px-4 py-3 rounded font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:border-cyan-500 hover:text-cyan-300 hover:bg-cyan-500/10" data-sort="created">
+                        <span class="relative z-10">CREATED</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    </button>
+                    <button class="filter-btn group relative overflow-hidden bg-gray-900/50 border border-gray-700 text-gray-400 px-4 py-3 rounded font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:border-cyan-500 hover:text-cyan-300 hover:bg-cyan-500/10" data-sort="updated">
+                        <span class="relative z-10">UPDATED</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    </button>
+                    <button class="filter-btn group relative overflow-hidden bg-gray-900/50 border border-gray-700 text-gray-400 px-4 py-3 rounded font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:border-cyan-500 hover:text-cyan-300 hover:bg-cyan-500/10" data-sort="rating">
+                        <span class="relative z-10">RATING</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    </button>
+                    <button class="filter-btn group relative overflow-hidden bg-gray-900/50 border border-gray-700 text-gray-400 px-4 py-3 rounded font-mono text-sm uppercase tracking-wider transition-all duration-300 hover:border-cyan-500 hover:text-cyan-300 hover:bg-cyan-500/10" data-sort="metacritic">
+                        <span class="relative z-10">METACRITIC</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="mb-16">
+            <div class="bg-black/60 backdrop-blur-xl border border-cyan-900/50 rounded-lg p-8 shadow-2xl shadow-cyan-500/10">
+                <div class="flex items-center justify-center gap-4 mb-8">
+                    <div class="w-8 h-px bg-gradient-to-r from-transparent to-cyan-500"></div>
+                    <h2 class="text-2xl font-bold uppercase tracking-wider text-cyan-300">
+                        ANALYTICS MATRIX
+                    </h2>
+                    <div class="w-8 h-px bg-gradient-to-l from-transparent to-cyan-500"></div>
+                </div>
+                <div class="h-80 bg-gray-950/80 border border-gray-800 rounded-lg flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-blue-500/5"></div>
+                    <div class="text-center relative z-10">
+                        <div class="w-20 h-20 border-2 border-cyan-500 rounded-lg mx-auto mb-6 flex items-center justify-center animate-glow-pulse">
+                            <svg class="w-10 h-10 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <p class="text-cyan-300 text-lg font-mono uppercase tracking-wider mb-2">CHART_RENDER.EXE</p>
+                        <p class="text-gray-500 text-sm font-mono">AWAITING_DATA_STREAM...</p>
+                    </div>
+                    <!-- Grid pattern overlay -->
+                    <div class="absolute inset-0 opacity-10">
+                        <div class="w-full h-full" style="background-image: repeating-linear-gradient(0deg, transparent, transparent 35px, #00d4ff 35px, #00d4ff 36px), repeating-linear-gradient(90deg, transparent, transparent 35px, #00d4ff 35px, #00d4ff 36px);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="game-cards">
+            <!-- Card 1 -->
+            <div class="game-card group bg-black/80 backdrop-blur border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 animate-fade-in">
+                <div class="relative h-48 bg-gradient-to-br from-purple-900 via-blue-900 to-cyan-900 overflow-hidden">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-6xl font-bold text-white/20 font-mono">IMG</div>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur border border-cyan-500/50 rounded px-3 py-1">
+                        <span class="text-cyan-400 font-mono font-bold">9.2</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-cyan-100 group-hover:text-cyan-300 transition-colors">CYBERPUNK 2077</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed font-light">Neural-enhanced RPG set in dystopian Night City where technology and flesh merge in digital chaos.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="platform-tag bg-green-900/30 border border-green-500/50 text-green-400 px-3 py-1 rounded text-xs font-mono uppercase">PC</span>
+                        <span class="platform-tag bg-blue-900/30 border border-blue-500/50 text-blue-400 px-3 py-1 rounded text-xs font-mono uppercase">PS5</span>
+                        <span class="platform-tag bg-red-900/30 border border-red-500/50 text-red-400 px-3 py-1 rounded text-xs font-mono uppercase">XBOX</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-gray-500 font-mono">
+                        <span>RELEASED: 2020</span>
+                        <span>META: 86</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="game-card group bg-black/80 backdrop-blur border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 animate-fade-in">
+                <div class="relative h-48 bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 overflow-hidden">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-6xl font-bold text-white/20 font-mono">IMG</div>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur border border-cyan-500/50 rounded px-3 py-1">
+                        <span class="text-cyan-400 font-mono font-bold">9.5</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-cyan-100 group-hover:text-cyan-300 transition-colors">THE WITCHER 3</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed font-light">Hunt monsters and navigate political intrigue in this dark fantasy epic of choices and consequences.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="platform-tag bg-green-900/30 border border-green-500/50 text-green-400 px-3 py-1 rounded text-xs font-mono uppercase">PC</span>
+                        <span class="platform-tag bg-blue-900/30 border border-blue-500/50 text-blue-400 px-3 py-1 rounded text-xs font-mono uppercase">PS4</span>
+                        <span class="platform-tag bg-red-900/30 border border-red-500/50 text-red-400 px-3 py-1 rounded text-xs font-mono uppercase">XBOX</span>
+                        <span class="platform-tag bg-gray-900/30 border border-gray-500/50 text-gray-400 px-3 py-1 rounded text-xs font-mono uppercase">NSW</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-gray-500 font-mono">
+                        <span>RELEASED: 2015</span>
+                        <span>META: 93</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="game-card group bg-black/80 backdrop-blur border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 animate-fade-in">
+                <div class="relative h-48 bg-gradient-to-br from-red-900 via-orange-900 to-yellow-900 overflow-hidden">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-6xl font-bold text-white/20 font-mono">IMG</div>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur border border-cyan-500/50 rounded px-3 py-1">
+                        <span class="text-cyan-400 font-mono font-bold">9.7</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-cyan-100 group-hover:text-cyan-300 transition-colors">RED DEAD REDEMPTION 2</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed font-light">Experience the dying Wild West through the eyes of outlaws seeking redemption and survival.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="platform-tag bg-green-900/30 border border-green-500/50 text-green-400 px-3 py-1 rounded text-xs font-mono uppercase">PC</span>
+                        <span class="platform-tag bg-blue-900/30 border border-blue-500/50 text-blue-400 px-3 py-1 rounded text-xs font-mono uppercase">PS4</span>
+                        <span class="platform-tag bg-red-900/30 border border-red-500/50 text-red-400 px-3 py-1 rounded text-xs font-mono uppercase">XBOX</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-gray-500 font-mono">
+                        <span>RELEASED: 2018</span>
+                        <span>META: 97</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="game-card group bg-black/80 backdrop-blur border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 animate-fade-in">
+                <div class="relative h-48 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 overflow-hidden">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-6xl font-bold text-white/20 font-mono">IMG</div>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur border border-cyan-500/50 rounded px-3 py-1">
+                        <span class="text-cyan-400 font-mono font-bold">8.9</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-cyan-100 group-hover:text-cyan-300 transition-colors">HADES</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed font-light">Escape the underworld in this roguelike masterpiece where death is just another beginning.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="platform-tag bg-green-900/30 border border-green-500/50 text-green-400 px-3 py-1 rounded text-xs font-mono uppercase">PC</span>
+                        <span class="platform-tag bg-gray-900/30 border border-gray-500/50 text-gray-400 px-3 py-1 rounded text-xs font-mono uppercase">NSW</span>
+                        <span class="platform-tag bg-blue-900/30 border border-blue-500/50 text-blue-400 px-3 py-1 rounded text-xs font-mono uppercase">PS5</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-gray-500 font-mono">
+                        <span>RELEASED: 2020</span>
+                        <span>META: 93</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="game-card group bg-black/80 backdrop-blur border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 animate-fade-in">
+                <div class="relative h-48 bg-gradient-to-br from-green-900 via-emerald-900 to-teal-900 overflow-hidden">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-6xl font-bold text-white/20 font-mono">IMG</div>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur border border-cyan-500/50 rounded px-3 py-1">
+                        <span class="text-cyan-400 font-mono font-bold">9.0</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-cyan-100 group-hover:text-cyan-300 transition-colors">MINECRAFT</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed font-light">Build infinite worlds where creativity meets survival in procedurally generated realms.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="platform-tag bg-green-900/30 border border-green-500/50 text-green-400 px-3 py-1 rounded text-xs font-mono uppercase">PC</span>
+                        <span class="platform-tag bg-blue-900/30 border border-blue-500/50 text-blue-400 px-3 py-1 rounded text-xs font-mono uppercase">PS4</span>
+                        <span class="platform-tag bg-red-900/30 border border-red-500/50 text-red-400 px-3 py-1 rounded text-xs font-mono uppercase">XBOX</span>
+                        <span class="platform-tag bg-purple-900/30 border border-purple-500/50 text-purple-400 px-3 py-1 rounded text-xs font-mono uppercase">MOB</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-gray-500 font-mono">
+                        <span>RELEASED: 2011</span>
+                        <span>META: 93</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="game-card group bg-black/80 backdrop-blur border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 animate-fade-in">
+                <div class="relative h-48 bg-gradient-to-br from-yellow-900 via-orange-900 to-red-900 overflow-hidden">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-6xl font-bold text-white/20 font-mono">IMG</div>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur border border-cyan-500/50 rounded px-3 py-1">
+                        <span class="text-cyan-400 font-mono font-bold">9.4</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-cyan-100 group-hover:text-cyan-300 transition-colors">ELDEN RING</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed font-light">Rise, Tarnished, and explore the shattered Lands Between in FromSoftware's magnum opus.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="platform-tag bg-green-900/30 border border-green-500/50 text-green-400 px-3 py-1 rounded text-xs font-mono uppercase">PC</span>
+                        <span class="platform-tag bg-blue-900/30 border border-blue-500/50 text-blue-400 px-3 py-1 rounded text-xs font-mono uppercase">PS5</span>
+                        <span class="platform-tag bg-red-900/30 border border-red-500/50 text-red-400 px-3 py-1 rounded text-xs font-mono uppercase">XBOX</span>
+                    </div>
+                    <div class="flex justify-between items-center text-xs text-gray-500 font-mono">
+                        <span>RELEASED: 2022</span>
+                        <span>META: 96</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="game-card group bg-black/80 backdrop-blur border border-gray-800 rounded-lg overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 animate-fade-in">
+                <div class="relative h-48 bg-gradient-to-br from-pink-900 via-rose-900 to-red-900 overflow-hidden">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-6xl font-bold text-white/20 font-mono">IMG</div>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur border border-cyan-500/50 rounded px-3 py-1">
+                        <span class="text-cyan-400 font-mono font-bold">8.7</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-cyan-100 group-hover:text-cyan-300 transition-colors">FALL GUYS</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-
