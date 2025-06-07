@@ -356,3 +356,75 @@ If you find a worm in an apple (on apple number 5), you stop picking.
 ---
 
 
+
+
+
+
+### Challenge 1: How old will you be in 5 years?
+
+**Challenge:**
+Ask the user how old they are, then display how old they’ll be in 5 years.
+
+**Hint:**
+Add 5 to the user's age. You’ll need to convert the input to an integer.
+
+---
+
+### Challenge 2: Are you a Ninja or a Pirate?
+
+**Challenge:**
+Ask the user if they prefer *Naruto* (ninja) or *One Piece* (pirate). If they say "Naruto", display "You’re a ninja!"
+If they say "One Piece", display "You’re a pirate!"
+If they type anything else, display "You are something else entirely!"
+
+**Hint:**
+Use an `if`, `elif`, and `else` block to check what they type.
+
+---
+
+### Challenge 3: Can you enter the Demon Slayer Corps?
+
+**Challenge:**
+Ask the user how old they are. If they are **13 or older**, display "You can join the Demon Slayer Corps!"
+Otherwise, display "You are too young to join."
+
+**Hint:**
+Use an `if` block to check if age >= 13.
+
+---
+
+### Challenge 4: Saiyan Power Level Check
+
+**Challenge:**
+Ask the user to enter their "power level" (a number).
+If it’s over **9000**, display "It’s over 9000!!!"
+If it’s **9000 or below**, display "Keep training!"
+
+**Hint:**
+Compare the number with 9000 using an `if` block.
+
+---
+
+### Challenge 5: What’s your favorite anime character’s mood?
+
+**Challenge:**
+Ask the user to type a mood: "happy", "angry", or "sad".
+Display different messages:
+
+* If "happy", display "Your favorite character is smiling!"
+* If "angry", display "Your favorite character is powering up!"
+* If "sad", display "Your favorite character needs a hug."
+
+**Hint:**
+Use `if`, `elif`, and `else` to handle different moods.
+
+---
+
+
+
+
+
+
+
+
+
