@@ -419,7 +419,82 @@ Display different messages:
 Use `if`, `elif`, and `else` to handle different moods.
 
 ---
+## IF BLOCKS CONTINUED
 
+### 🧃 1. **Health Potion Check**
+
+You are playing an adventure game and have 3 health potions.
+
+**Write a program that checks:**
+
+* If you have **3 or more potions**, print `"You're well prepared!"`
+* Otherwise, print `"Better grab some potions!"`
+
+**Hint:**
+Use an `if` and an `else`.
+
+---
+
+### 🔥 2. **Naruto Chakra Test**
+
+Naruto has a chakra level stored in the variable `chakra`.
+
+**Write a program that checks:**
+
+* If chakra is **80 or more**, print `"You can use Rasengan!"`
+* If chakra is **40 or more**, print `"Use Shadow Clone Jutsu."`
+* Otherwise, print `"Rest and recover chakra."`
+
+**Hint:**
+Use `if`, `elif`, and `else`. Try different chakra levels like `85`, `50`, or `20`.
+
+---
+
+### 🎮 3. **Level Up!**
+
+You're playing a game. Your level is stored in `level`.
+
+**Write a program that checks:**
+
+* If level is **50**, print `"You've reached the final boss!"`
+* If level is **between 10 and 49**, print `"Keep going, you're doing great!"`
+* If level is **less than 10**, print `"Just getting started!"`
+
+**Hint:**
+Use multiple `elif` statements. What happens when `level = 50`?
+
+---
+
+### 🧊 4. **Freezer Inventory (Minecraft Style)**
+
+Your inventory has `ice_blocks = 0`.
+
+**Write a program that checks:**
+
+* If `ice_blocks` is exactly **0**, print `"No ice blocks left!"`
+* If `ice_blocks` is **more than 50**, print `"Too many! You’re hoarding ice!"`
+* Otherwise, print `"You have enough for building."`
+
+**Hint:**
+Use equality (`==`), greater than (`>`), and `else`.
+
+---
+
+### 🍫 5. **Candy Prize Game**
+
+Now, let's combine everything! You have `candies = 10`.
+
+**Write a program that checks:**
+
+* If you have **50 or more candies**, print `"Jackpot! Mega prize!"`
+* If you have **10 or more candies**, print `"You win a prize!"`
+* If you have **0 candies**, print `"No prize! You need to collect some."`
+* Otherwise, print `"Keep trying!"`
+
+**Hint:**
+Use `if`, `elif`, and `else`. Try changing the value of `candies` to test all paths.
+
+---
 
 
 
