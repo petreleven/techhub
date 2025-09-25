@@ -496,6 +496,132 @@ Use `if`, `elif`, and `else`. Try changing the value of `candies` to test all pa
 
 ---
 
+##FUNCTIONS RETURN
+---
+
+**1. Double Trouble**
+
+❓ Write a function that takes a number and returns double of it.
+Example:
+
+Input: 5
+Output: 10
+
+💡 Hint: Use `return number * 2`
+
+---
+
+**2. First Letter Finder**
+
+❓ Write a function that takes a word and returns its first letter.
+Example:
+
+Input: "pizza"
+Output: "p"
+
+💡 Hint: Remember: words work like lists! Try `word[0]`
+
+---
+
+**3. Last Laugh**
+
+❓ Write a function that takes a word and returns its last letter.
+Example:
+
+Input: "smile"
+Output: "e"
+
+💡 Hint: Negative numbers help! Try `word[-1]`
+
+---
+
+**4. Add Two**
+
+❓ Write a function that takes a number and returns the number plus 2.
+Example:
+
+Input: 7
+Output: 9
+
+💡 Hint: Just do `return number + 2`
+
+---
+
+**5. Magic Mix**
+
+❓ Write a function that takes two words and returns them joined together.
+Example:
+
+Input: "ice", "cream"
+Output: "icecream"
+
+💡 Hint: Use `+` to join words
+
+---
+
+**6. Word Length**
+
+❓ Write a function that takes a word and returns how many letters it has.
+Example:
+
+Input: "banana"
+Output: 6
+
+💡 Hint: Use `len(word)`
+
+---
+
+**7. Bigger Number**
+
+❓ Write a function that takes two numbers and returns the bigger one.
+Example:
+
+Input: 4, 9
+Output: 9
+
+💡 Hint: Use `if` and `return`
+
+---
+
+**8. Square It!**
+
+❓ Write a function that takes a number and returns its square (number × number).
+Example:
+
+Input: 6
+Output: 36
+
+💡 Hint: Try `number * number`
+
+---
+
+**9. Shout Word**
+
+❓ Write a function that takes a word and returns it in ALL CAPS.
+Example:
+
+Input: "hello"
+Output: "HELLO"
+
+💡 Hint: Use `word.upper()`
+
+---
+
+**10. Funny Combo**
+
+❓ Write a function that takes a word and returns the word plus its length.
+Example:
+
+Input: "cat"
+Output: "cat3"
+
+💡 Hint: Remember to change number to string → `str()`
+
+---
+
+
+
+
 
 
 
