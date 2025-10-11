@@ -1,138 +1,92 @@
+---
 
+### 🐶 **Challenge 1: Pet Names**
 
-### **1. Favorite Colors**
+**Challenge:**
+Create a dictionary called `pets` with at least **3 animals** and their **names**.
+Example: `dog → Buddy`, `cat → Snowy`
 
-You have this dictionary:
+**Hint:**
 
 ```python
-favorite_colors = {"Alice": "blue", "Bob": "green", "Eve": "red"}
+pets = {"dog": "Buddy", "cat": "Snowy", "fish": "Bubbles"}
 ```
-
-**Challenge:**
-Print out Alice's favorite color.
-
-*Hint:* Use `favorite_colors["Alice"]`.
 
 ---
 
-### **2. Adding a New Friend**
+### 🍫 **Challenge 2: Favorite Candy**
 
-You have the same dictionary:
+**Challenge:**
+Make a dictionary called `favorite_candy` with your friends’ names as keys and their favorite candy as values.
+Then print your own favorite candy.
+
+**Hint:**
 
 ```python
-favorite_colors = {"Alice": "blue", "Bob": "green", "Eve": "red"}
+favorite_candy = {"Liam": "KitKat", "Emma": "Snickers", "Noah": "Mars"}
+print(favorite_candy["Liam"])
 ```
-
-**Challenge:**
-Add a new friend, **"Tom"**, whose favorite color is **yellow**.
-
-*Hint:* `favorite_colors["Tom"] = "yellow"`.
 
 ---
 
-### **3. Candy Count**
+### ⚽ **Challenge 3: Sports Stars**
 
-You have:
+**Challenge:**
+Create a dictionary called `sports` with the **sport name** as the key and your **favorite player** as the value.
+Then print the favorite player for `"football"`.
+
+**Hint:**
 
 ```python
-candies = {"M&Ms": 5, "Skittles": 3, "Twix": 2}
+sports = {"football": "Messi", "basketball": "Curry"}
+print(sports["football"])
 ```
 
-**Challenge:**
-Print how many Skittles you have.
-
 ---
 
-### **4. Adding Candies**
+### 🏫 **Challenge 4: School Subjects**
 
-You found 2 more Twix bars!
 **Challenge:**
-Increase the number of Twix in the `candies` dictionary by 2.
+Make a dictionary called `subjects` with **subject names** as keys and **your teacher’s name** as values.
+Print who teaches `"Math"`.
 
----
-
-### **5. Key Existence**
-
-You have:
+**Hint:**
 
 ```python
-pets = {"dog": "Buddy", "cat": "Mittens"}
+subjects = {"Math": "Mr. Tom", "Science": "Mrs. Rose"}
+print(subjects["Math"])
 ```
-
-**Challenge:**
-Check if you have a "hamster" in your pets dictionary.
-If not, print `"No hamster found!"`.
-
-*Hint:* Use `if "hamster" in pets:`.
 
 ---
 
-### **6. Looping Through**
+### 🧁 **Challenge 5: Birthday Menu**
 
-You have:
+**Challenge:**
+Make a dictionary called `birthday_menu` with items like `"cake"`, `"drink"`, and `"snack"`.
+Print the value for `"cake"`.
+
+**Hint:**
 
 ```python
-scores = {"Alice": 10, "Bob": 8, "Eve": 12}
-```
-
-**Challenge:**
-Print each player's name and their score like this:
-
-```
-Alice scored 10
-Bob scored 8
-Eve scored 12
+birthday_menu = {"cake": "Chocolate", "drink": "Juice", "snack": "Chips"}
+print(birthday_menu["cake"])
 ```
 
 ---
 
-### **7. Removing a Key**
+### 🎮 **Challenge 6: Game Scores**
 
-You have:
+**Challenge:**
+Create a dictionary called `scores` with your friends’ names as keys and their game scores as values.
+Print one friend’s score.
+
+**Hint:**
 
 ```python
-fruits = {"apple": 3, "banana": 5, "orange": 2}
+scores = {"Alex": 90, "Maya": 85, "Ben": 100}
+print(scores["Ben"])
 ```
 
-**Challenge:**
-Remove `"banana"` from the dictionary.
-
-*Hint:* Use `del fruits["banana"]`.
-
 ---
-
-### **8. Build Your Own Dictionary**
-
-**Challenge:**
-Make a dictionary called `superhero_powers` with at least 3 heroes and their superpowers (e.g., `"Superman": "Flying"`).
-Print one hero's power.
-
----
-
-### **9. Find the Winner**
-
-You have:
-
-```python
-points = {"Anna": 15, "Leo": 20, "Maya": 18}
-```
-
-**Challenge:**
-Print the name of the person with the highest points.
-
-*Hint:* Use `max(points, key=points.get)`.
-
----
-
-### **10. Secret Code**
-
-You have:
-
-```python
-code = {"a": "1", "b": "2", "c": "3"}
-```
-
-**Challenge:**
-Print the code for `"b"`.
 
 
