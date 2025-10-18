@@ -53,9 +53,7 @@ In a game, you collect treasures worth **10**, **20**, and **30** points. Write 
 
 **Hint:**
 
-* Store them in a list.
-* Use `sum()` or add them manually.
-* Return the result.
+* def total_treasure(num1, num2, num3):
 
 ---
 
