@@ -1,4 +1,3 @@
-```markdown
 # 🌾 IGNITE Institutional Diagnostic Tool – Assessment Report
 
 **Client:** Peter  
@@ -158,5 +157,3 @@ Your organization needs:
 
 ## Nutrition Sensitivity
 - (Continue similar steps as gender section)
-
-```
