@@ -1,3 +1,4 @@
+```markdown
 # 🌾 IGNITE Institutional Diagnostic Tool – Assessment Report
 
 **Client:** Peter  
@@ -60,4 +61,102 @@ No formal or written policy exists. An unwritten rule does not meet minimum stan
 
 ---
 
-# 🟦
+# 🟦 Sub-domain 3: Strategic/Business Plan
+
+### 1. How does your work contribute to the strategic/business plan?
+**Your answer:**  
+> our work of spreading information is core to the business plan
+
+### 2. What does the plan say about gender equality and nutrition sensitivity?
+**Your answer:**  
+> dont have
+
+### 3. How is gender/nutrition applied in your job or program?
+**Your answer:**  
+> its unwritten
+
+### **Scores**
+- **Gender:** 0  
+- **Nutrition:** 0  
+
+### **Rationale**
+The strategic plan does not include gender or nutrition, either formally or informally.
+
+---
+
+# 🟦 Sub-domain 4: Programming
+
+### 1. What gender/nutrition interventions are implemented?
+**Your answer:**  
+> we stress importance of agriculture; teach nutrition basics like corn is carbohydrate, crop rotation, minimal chemicals
+
+### 2. Who are the beneficiaries?
+**Your answer:**  
+> youth
+
+### 3. Are gender/nutrition meaningful parts of activities?
+**Your answer:**  
+> no
+
+### **Scores**
+- **Gender:** 0  
+- **Nutrition:** 0  
+
+### **Rationale**
+Gender is not integrated, and nutrition, while mentioned superficially, is not a meaningful part of program design or implementation.
+
+---
+
+# 📊 Domain Score Summary: Domain 1
+
+| Component     | Score | Stage     |
+|--------------|-------|-----------|
+| Gender       | 0.00  | Nascent   |
+| Nutrition    | 0.00  | Nascent   |
+
+---
+
+# 📑 Diagnostic Summary
+Peter’s organization is at an early foundational stage regarding **Gender Equality** and **Nutrition Sensitivity**. A score of **0.00 (Nascent)** indicates no formal policies, no structured practices, and minimal awareness.
+
+---
+
+# 🚀 Priority Areas for Improvement  
+**Top priority:** Domain 1 – Adopt a Gender Equality Policy and Nutrition-Sensitive Approach
+
+Your organization needs:
+- Foundational understanding  
+- Basic formal policies  
+- Integration into mission, strategy, and programming  
+
+---
+
+# ⚡ Quick Wins (0–3 Months)
+
+## Gender Equality
+- 1-day introduction to gender equality  
+- Assign a Gender Focal Point  
+- Review mission/vision to include gender principles  
+- Start collecting sex-disaggregated data  
+
+## Nutrition Sensitivity
+- 1-day nutrition basics training  
+- Assign a Nutrition Focal Point  
+- Identify simple nutrition entry points  
+- Gather national nutrition guidelines  
+
+---
+
+# 📈 Medium-Term Actions (3–12 Months)
+
+## Gender Equality
+- Draft a Gender Equality Policy  
+- Conduct a basic gender analysis  
+- Integrate gender into project cycle templates  
+- Provide gender mainstreaming training  
+- Create a confidential gender feedback mechanism  
+
+## Nutrition Sensitivity
+- (Continue similar steps as gender section)
+
+```
