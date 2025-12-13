@@ -233,15 +233,19 @@ You are sending out invitations to your 3 best friends for a sleepover.
 
 ---
 
-### **2. Scenario 2:**
 
-Now, you have 5 candies. Write a program that checks if you have less than 10 candies.
-If you do, the program should print `"Keep trying!"`.
+---
+
+### **Scenario 2**
+
+You want to send a message to **3 teammates** telling them about a game night.
+
+**Write a program that prints `"Come join us!"` exactly 3 times.**
 
 💡 **Hint:**
 
-* Use an `if` block to check if candies are less than 10.
-* Print the message if true.
+* Use a `for` loop to repeat an action 3 times.
+* Inside the loop, print the message.
 
 ---
 
