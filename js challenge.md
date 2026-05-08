@@ -4,6 +4,8 @@
 
 Your goal is to build a "Light Switch" for your website. Instead of just having a plain white page, you’re going to give your users the power to choose between **Light Mode** and **Dark Mode**.
 
+ [example]([URL](https://darker.oneapp.dev/))
+ 
 ### Phase 1: The Skeleton (HTML)
 
 Before we can write any logic, we need the physical buttons on the page.
